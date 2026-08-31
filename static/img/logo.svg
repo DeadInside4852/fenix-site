@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="phoenixFlameGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF1A00" />
+      <stop offset="35%" stop-color="#FF5D00" />
+      <stop offset="70%" stop-color="#FFA800" />
+      <stop offset="100%" stop-color="#FFD600" />
+    </linearGradient>
+    <linearGradient id="phoenixWingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB300" />
+      <stop offset="50%" stop-color="#FF4D00" />
+      <stop offset="100%" stop-color="#8F0000" />
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="42" fill="none" stroke="url(#phoenixFlameGrad)" stroke-width="1.5" opacity="0.25" />
+  <path d="M50 78 C32 68 18 50 14 30 C20 42 30 48 38 48 C26 38 22 24 24 12 C32 24 42 32 48 38 C40 28 39 18 42 8 C46 20 49 32 50 45 Z" fill="url(#phoenixWingGrad)" opacity="0.95" />
+  <path d="M50 78 C68 68 82 50 86 30 C80 42 70 48 62 48 C74 38 78 24 76 12 C68 24 58 32 52 38 C60 28 61 18 58 8 C54 20 51 32 50 45 Z" fill="url(#phoenixFlameGrad)" opacity="0.95" />
+  <path d="M50 90 C46 80 42 66 45 52 C46 44 48 36 50 24 C52 36 54 44 55 52 C58 66 54 80 50 90 Z" fill="url(#phoenixFlameGrad)" />
+  <circle cx="50" cy="24" r="4.5" fill="#FFE600" />
+  <polygon points="50,18 47,24 53,24" fill="#FFF" />
+</svg>

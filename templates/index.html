@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сантехническая служба «Феникс» — Срочные услуги сантехника с гарантией</title>
+  <meta name="description" content="Сервисная служба «Феникс». Профессиональные сантехнические услуги, устранение засоров и протечек, монтаж и ремонт сантехники с выездом за 30-45 минут.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+  <!-- Фоновое свечение -->
+  <div class="bg-ambient-glow">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+  </div>
+
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo-wrapper">
+        <div class="logo-icon">
+          <img src="/static/img/logo.svg" alt="Феникс" width="40" height="40">
+        </div>
+        <div class="logo-text">
+          <span class="brand-name">ФЕНИКС</span>
+          <span class="brand-subtitle">Служба сантехники</span>
+        </div>
+      </a>
+
+      <div class="nav-contacts">
+        <div class="contact-quick">
+          <a href="tel:+78005553535" class="phone-link">+7 (800) 555-35-35</a>
+          <span class="work-hours">Аварийный выезд: 24/7 (без выходных)</span>
+        </div>
+        <button class="btn btn-primary js-open-modal">
+          <span>Вызвать сантехника</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Первый экран (Hero) -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge-tag">
+          <span class="badge-dot"></span>
+          <span>Срочные сантехнические работы • Выезд от 30 минут</span>
+        </div>
+        <h1 class="hero-title">
+          Профессиональная сантехника с <span class="gradient-text">гарантией от протечек</span>
+        </h1>
+        <p class="hero-description">
+          Оперативное устранение протечек, прочистка любых засоров, монтаж труб и установка сантехники любой сложности. Дежурные мастера во всех районах города.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-lg js-open-modal">
+            <span>🔥 Вызвать мастера со скидкой 10%</span>
+          </button>
+          <a href="#benefits" class="btn btn-outline btn-lg">
+            <span>Наши преимущества</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-value">30 мин</span>
+            <span class="stat-label">Срочный выезд мастера</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">до 2 лет</span>
+            <span class="stat-label">Гарантия на все работы</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">100%</span>
+            <span class="stat-label">Контроль герметичности</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Быстрая форма на первом экране -->
+      <div class="hero-card-visual">
+        <div class="card-visual-header">
+          <h3 class="card-visual-title">Срочный вызов сантехника</h3>
+          <div class="status-live">
+            <span class="status-dot"></span>
+            <span>Дежурные мастера на линии</span>
+          </div>
+        </div>
+        <form id="heroLeadForm" class="express-form">
+          <div class="form-group">
+            <label class="form-label" for="heroName">Ваше имя</label>
+            <input type="text" id="heroName" name="name" class="form-control" placeholder="Александр" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="heroPhone">Номер телефона</label>
+            <input type="tel" id="heroPhone" name="phone" class="form-control" placeholder="+7 (___) ___-__-__" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="heroProblem">Что нужно сделать?</label>
+            <input type="text" id="heroProblem" name="problem" class="form-control" placeholder="Например, течет смеситель или засор в ванной">
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 8px;">
+            <span>Вызвать мастера онлайн</span>
+          </button>
+          <p class="form-note">
+            Нажимая кнопку, вы даете согласие на обработку персональных данных
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Преимущества -->
+  <section id="benefits" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Преимущества</span>
+        <h2 class="section-title">Почему сантехнику доверяют службе «Феникс»</h2>
+        <p class="section-desc">Надежные материалы, аккуратная работа без грязи и прозрачная стоимость без скрытых наценок.</p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">⚡</div>
+          <h3 class="benefit-title">Аварийный выезд за 30 минут</h3>
+          <p class="benefit-text">Быстрое реагирование при порывах труб, течах и сильных засорах. Мастер приезжает со всем необходимым оборудованием.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🛡</div>
+          <h3 class="benefit-title">Гарантия до 24 месяцев</h3>
+          <p class="benefit-text">Выдаем официальный договор и гарантийный талон. Полная ответственность за надежность всех соединений.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🔧</div>
+          <h3 class="benefit-title">Качественные материалы</h3>
+          <p class="benefit-text">Используем сертифицированные трубы, фитинги и запорную арматуру проверенных брендов (Rehau, Valtec, Geberit, Grohe).</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">💰</div>
+          <h3 class="benefit-title">Фиксированная смета</h3>
+          <p class="benefit-text">Мастер осматривает объект и называет точную стоимость ДО начала работ. Никаких непредвиденных доплат в конце.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">👨‍🔧</div>
+          <h3 class="benefit-title">Квалифицированные слесари</h3>
+          <p class="benefit-text">Специалисты со стажем от 7 лет, прошедшие строгий отбор. Чистая и аккуратная работа с бережным отношением к ремонту.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">💧</div>
+          <h3 class="benefit-title">Проверка под давлением</h3>
+          <p class="benefit-text">Обязательное тестирование всех соединений на герметичность (опрессовка) перед сдачей работы заказчику.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Этапы работы -->
+  <section class="section" style="background: rgba(19, 21, 27, 0.4);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Простой порядок</span>
+        <h2 class="section-title">Как мы решаем сантехнические задачи</h2>
+        <p class="section-desc">Четкий регламент от вашей заявки до идеально работающей сантехники</p>
+      </div>
+
+      <div class="steps-wrapper">
+        <div class="step-card">
+          <span class="step-num">01</span>
+          <div class="step-icon">📞</div>
+          <h3 class="step-title">Заявка и консультация</h3>
+          <p class="step-desc">Оставьте заявку на сайте. Дежурный мастер свяжется с вами в течение 3 минут, оценит ситуацию и рассчитает время прибытия.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">02</span>
+          <div class="step-icon">🚗</div>
+          <h3 class="step-title">Приезд мастера</h3>
+          <p class="step-desc">Сантехник прибывает точно в срок со специализированным инструментом, деталями и защитными бахилами.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">03</span>
+          <div class="step-icon">🛠</div>
+          <h3 class="step-title">Диагностика и монтаж</h3>
+          <p class="step-desc">Специалист находит причину неполадки, согласовывает финальную смету и качественно выполняет ремонт или установку.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">04</span>
+          <div class="step-icon">📋</div>
+          <h3 class="step-title">Тест и гарантия</h3>
+          <p class="step-desc">Проводим проверку под рабочим напором воды, выписываем акт и гарантию до 2 лет. Оплата только после проверки.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Премиальный блок мастеров -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Команда профессионалов</span>
+        <h2 class="section-title">Ведущие сантехники службы «Феникс»</h2>
+        <p class="section-desc">Мастера высшей квалификации с многолетним опытом, готовые выехать на вызов в любой район города прямо сейчас.</p>
+      </div>
+
+      <div class="masters-grid">
+        <!-- Мастер 1 -->
+        <div class="master-card">
+          <div class="master-avatar-wrapper">
+            <img src="/static/img/master1.jpg" alt="Алексей Морозов" class="master-avatar" onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?w=250&auto=format&fit=crop&q=80'">
+            <span class="master-status-badge" title="Свободен для выезда"></span>
+          </div>
+          <h3 class="master-name">Алексей Морозов</h3>
+          <span class="master-role-badge">Монтаж труб и отопления</span>
+          <p class="master-bio">Сложная разводка Rehau и полипропилена, замена стояков, монтаж радиаторов и теплых полов.</p>
+          <div class="master-stats-row">
+            <div class="master-stat-item">
+              <span class="master-stat-num">12 лет</span>
+              <span class="master-stat-label">Опыт работы</span>
+            </div>
+            <div class="master-stat-item">
+              <span class="master-stat-num rating-gold">★ 4.95</span>
+              <span class="master-stat-label">180+ отзывов</span>
+            </div>
+          </div>
+          <button class="btn btn-outline btn-sm btn-master-call js-open-modal" data-service="Замена труб / разводка водоснабжения">
+            <span>Вызвать Алексея</span>
+          </button>
+        </div>
+
+        <!-- Мастер 2 -->
+        <div class="master-card">
+          <div class="master-avatar-wrapper">
+            <img src="/static/img/master2.jpg" alt="Владимир Орлов" class="master-avatar" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=250&auto=format&fit=crop&q=80'">
+            <span class="master-status-badge" title="Свободен для выезда"></span>
+          </div>
+          <h3 class="master-name">Владимир Орлов</h3>
+          <span class="master-role-badge">Устранение засоров и течей</span>
+          <p class="master-bio">Электромеханическая прочистка сложных засоров канализации, телеинспекция и устранение прорывов.</p>
+          <div class="master-stats-row">
+            <div class="master-stat-item">
+              <span class="master-stat-num">9 лет</span>
+              <span class="master-stat-label">Опыт работы</span>
+            </div>
+            <div class="master-stat-item">
+              <span class="master-stat-num rating-gold">★ 5.0</span>
+              <span class="master-stat-label">210+ отзывов</span>
+            </div>
+          </div>
+          <button class="btn btn-outline btn-sm btn-master-call js-open-modal" data-service="Устранение засора / прочистка труб">
+            <span>Вызвать Владимира</span>
+          </button>
+        </div>
+
+        <!-- Мастер 3 -->
+        <div class="master-card">
+          <div class="master-avatar-wrapper">
+            <img src="/static/img/master3.jpg" alt="Дмитрий Романов" class="master-avatar" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=250&auto=format&fit=crop&q=80'">
+            <span class="master-status-badge" title="Свободен для выезда"></span>
+          </div>
+          <h3 class="master-name">Дмитрий Романов</h3>
+          <span class="master-role-badge">Ванны, душевые и инсталляции</span>
+          <p class="master-bio">Монтаж скрытых инсталляций Geberit/Grohe, установка акриловых ванн и душевых уголков под ключ.</p>
+          <div class="master-stats-row">
+            <div class="master-stat-item">
+              <span class="master-stat-num">14 лет</span>
+              <span class="master-stat-label">Опыт работы</span>
+            </div>
+            <div class="master-stat-item">
+              <span class="master-stat-num rating-gold">★ 4.9</span>
+              <span class="master-stat-label">260+ отзывов</span>
+            </div>
+          </div>
+          <button class="btn btn-outline btn-sm btn-master-call js-open-modal" data-service="Установка / ремонт унитаза или инсталляции">
+            <span>Вызвать Дмитрия</span>
+          </button>
+        </div>
+
+        <!-- Мастер 4 -->
+        <div class="master-card">
+          <div class="master-avatar-wrapper">
+            <img src="/static/img/master4.jpg" alt="Сергей Поляков" class="master-avatar" onerror="this.src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=250&auto=format&fit=crop&q=80'">
+            <span class="master-status-badge" title="Свободен для выезда"></span>
+          </div>
+          <h3 class="master-name">Сергей Поляков</h3>
+          <span class="master-role-badge">Смесители, бойлеры, сифоны</span>
+          <p class="master-bio">Установка термостатических смесителей, подключение бойлеров, фильтров очистки воды и насосов.</p>
+          <div class="master-stats-row">
+            <div class="master-stat-item">
+              <span class="master-stat-num">8 лет</span>
+              <span class="master-stat-label">Опыт работы</span>
+            </div>
+            <div class="master-stat-item">
+              <span class="master-stat-num rating-gold">★ 4.88</span>
+              <span class="master-stat-label">145+ отзывов</span>
+            </div>
+          </div>
+          <button class="btn btn-outline btn-sm btn-master-call js-open-modal" data-service="Ремонт / замена смесителя">
+            <span>Вызвать Сергея</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Призыв к действию -->
+  <section class="section" style="padding-bottom: 20px;">
+    <div class="container">
+      <div class="cta-banner">
+        <h2 class="cta-banner-title">Проблема с сантехникой? Решим прямо сейчас!</h2>
+        <p class="cta-banner-desc">Оставьте заявку онлайн и получите скидку 10% на все виды сантехнических услуг.</p>
+        <button class="btn btn-primary btn-lg js-open-modal" style="font-size: 18px; padding: 18px 42px;">
+          <span>🔥 Вызвать дежурного сантехника</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="logo-wrapper">
+            <img src="/static/img/logo.svg" alt="Феникс" width="32" height="32">
+            <span class="brand-name" style="font-size: 20px;">ФЕНИКС</span>
+          </div>
+          <p class="footer-desc">
+            Профессиональная сантехническая служба. Комплексный монтаж, обслуживание и срочный ремонт систем водоснабжения, канализации и отопления.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Контакты и дежурная служба</h4>
+          <ul class="footer-info-list">
+            <li>📞 Телефон: +7 (800) 555-35-35</li>
+            <li>⏰ Аварийная служба: Круглосуточно 24/7</li>
+            <li>📍 Прием заявок: Онлайн без выходных</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Гарантии и сервис</h4>
+          <ul class="footer-info-list">
+            <li>Официальный договор и акт работ</li>
+            <li>Гарантия от протечек до 2 лет</li>
+            <li>Выезд мастера во все районы</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Служба сантехники «Феникс». Все права защищены.</span>
+        <span>Политика конфиденциальности</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Модальное окно подачи заявки -->
+  <div id="leadModal" class="modal-backdrop">
+    <div class="modal-box">
+      <button id="modalCloseBtn" class="modal-close-btn" aria-label="Закрыть">✕</button>
+
+      <div id="modalFormContainer">
+        <div class="modal-header">
+          <h3 class="modal-title">Вызов мастера-сантехника</h3>
+          <p class="modal-subtitle">Заполните форму, и дежурный специалист свяжется с вами в течение 3–5 минут</p>
+        </div>
+        <form id="modalLeadForm" class="express-form">
+          <div class="form-group">
+            <label class="form-label" for="modalName">Ваше имя *</label>
+            <input type="text" id="modalName" name="name" class="form-control" placeholder="Иван Иванов" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="modalPhone">Номер телефона *</label>
+            <input type="tel" id="modalPhone" name="phone" class="form-control" placeholder="+7 (___) ___-__-__" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="modalDevice">Какая услуга вам требуется?</label>
+            <select id="modalDevice" name="device_type" class="form-control">
+              <option value="Срочное устранение течи">Срочное устранение течи / прорыва</option>
+              <option value="Устранение засора / прочистка труб">Устранение засора / прочистка труб</option>
+              <option value="Ремонт / замена смесителя">Ремонт / замена смесителя или крана</option>
+              <option value="Установка / ремонт унитаза или инсталляции">Установка / ремонт унитаза или инсталляции</option>
+              <option value="Установка ванны / душевой кабины">Установка ванны / душевой кабины</option>
+              <option value="Замена труб / разводка водоснабжения">Замена труб / разводка водоснабжения</option>
+              <option value="Установка бойлера / водонагревателя">Установка бойлера / водонагревателя</option>
+              <option value="Подключение стиральной/посудомоечной машины">Подключение стиральной / посудомоечной машины</option>
+              <option value="Ремонт отопления / замена радиаторов">Ремонт отопления / замена радиаторов</option>
+              <option value="Другая сантехническая услуга">Другая сантехническая услуга</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="modalComment">Описание проблемы / адрес (необязательно)</label>
+            <textarea id="modalComment" name="comment" class="form-control" rows="2" placeholder="Опишите, что случилось (например, капает из-под раковины)"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 6px;">
+            <span>🔥 Отправить заявку сантехнику</span>
+          </button>
+          <p class="form-note">
+            Нажимая кнопку, вы соглашаетесь с условиями обработки данных
+          </p>
+        </form>
+      </div>
+
+      <div id="modalSuccessContainer" class="modal-success">
+        <div class="success-icon">✓</div>
+        <h3 class="modal-title" style="margin-bottom: 12px;">Заявка принята!</h3>
+        <p class="modal-subtitle" style="margin-bottom: 16px;">
+          Ваш номер заявки: <strong id="successOrderNumber" style="color: var(--fire-amber);">#FX-1001</strong>.<br>
+          Дежурный сантехник свяжется с вами в течение 3–5 минут для уточнения адреса и времени выезда.
+        </p>
+        <button id="modalSuccessBtn" class="btn btn-outline" style="width: 100%;">
+          <span>Отлично, спасибо</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Плавающая кнопка для мобильных -->
+  <div class="fab-sticky">
+    <button class="btn btn-primary js-open-modal" style="box-shadow: 0 4px 20px rgba(255, 85, 0, 0.6); padding: 14px 22px;">
+      <span>🔥 Сантехник</span>
+    </button>
+  </div>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
